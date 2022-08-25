@@ -1,9 +1,17 @@
-# Ego4d Social Benchmark
+# Ego4d Social Benchmark (TTM)
 This repository contains the codebase for Ego4d social benchmark -- *Talking-to-me* baseline models. 
 
 Switch to [*Looking-at-me*](https://github.com/EGO4D/social-interactions/tree/lam).
 
 ***
+
+### Note from the author
+This repository is a fork of the original repository and trying to fix the original bugs.
+You can download file in the below to be able to reproduce the results:
+
+[_manifest.csv_](https://drive.google.com/file/d/1skwx4fjwykfxmYhUHYk4-9BXWLNWiqSw/view?usp=sharing)\
+[_av_train.json_](https://drive.google.com/file/d/1YwZjGfSnCyim95CdF3Q1HoyUqpSz-KPr/view?usp=sharing)\
+[_av_val.json_](https://drive.google.com/file/d/1xR9n36mqmXzw3GpMyQYjPibYp5-vQ_oX/view?usp=sharing)
 
 ### Dependencies
 

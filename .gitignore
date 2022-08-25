@@ -15,6 +15,8 @@ b1*/
 data/json/
 deprecated/
 data/csv/
+data/tmp
+data/videos
 data/json_original/
 data/result_LAM/
 data/result_TTM/
