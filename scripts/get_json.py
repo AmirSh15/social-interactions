@@ -1,10 +1,10 @@
 import os
-import json
+import orjson
 
 
 def get_json(json_path, result_path):
     with open(json_path) as f:
-        reader = json.load(f)
+        reader = orjson.loads(f.read())
         for video in reader['videos']:
             for clip in video['clips']:
                 uid = clip['clip_uid']
@@ -33,4 +33,5 @@ def get_json(json_path, result_path):
                             os.makedirs(folder_path)
                         jsonfile_path = os.path.join(folder_path, json_name)
                         with open(jsonfile_path, 'a') as json_file:
-                            json.dump(track_list, json_file)
+                            # orjson.dump(track_list, json_file)
+                            json_file.write(orjson.dumps(track_list).decode("utf-8"))

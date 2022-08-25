@@ -4,6 +4,9 @@ from get_lam_result import get_lam_result
 from get_ttm_result import get_ttm_result
 from merge import merge_json
 
+if __name__ == "__main__":
+    if "scripts" in os.getcwd():
+        os.chdir("..")
 
 json_path = 'data/json/av.json'                # the path of annotation json file
 original_path = 'data/json_original'           # the saving path of annotation of the face bbox

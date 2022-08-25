@@ -1,10 +1,10 @@
 import os
-import json
+import orjson
 
 
 def get_ttm_result(json_path, result_path):
     with open(json_path) as f:
-        reader = json.load(f)
+        reader = orjson.loads(f.read())
         for video in reader['videos']:
             for clip in video['clips']:
                 ttm_list = []
@@ -33,4 +33,4 @@ def get_ttm_result(json_path, result_path):
                     os.makedirs(result_path)
                 jsonfile_path = os.path.join(result_path, json_name)
                 with open(jsonfile_path, 'a') as json_file:
-                    json.dump(ttm_list, json_file)
+                    json_file.write(orjson.dumps(ttm_list).decode("utf-8"))
