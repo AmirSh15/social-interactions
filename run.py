@@ -1,4 +1,5 @@
 import os, sys, random, pprint
+import json
 
 sys.path.append('.')
 import torch
@@ -22,7 +23,7 @@ def main(args):
         torch.cuda.init()
 
     if not os.path.exists(args.exp_path):
-        os.mkdir(args.exp_path)
+        os.makedirs(args.exp_path)
 
     logger = create_logger(args)
     logger.info(pprint.pformat(args))

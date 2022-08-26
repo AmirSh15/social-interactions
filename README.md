@@ -9,6 +9,16 @@ Switch to [*Looking-at-me*](https://github.com/EGO4D/social-interactions/tree/la
 This repository is a fork of the original repository and trying to fix the original bugs.
 You can download file in the below to be able to reproduce the results:
 
+Download _av_train.json_ and _av_val.json_: 
+```
+ego4d --output_directory="~/ego4d_data" --datasets annotations
+```
+
+Download _manifest.csv_ (don't need to download the whole dataset, only the manifest):
+```
+ego4d --output_directory="~/ego4d_data" --metadata --datasets clips
+```
+
 [//]: # ([_manifest.csv_]&#40;https://drive.google.com/file/d/1skwx4fjwykfxmYhUHYk4-9BXWLNWiqSw/view?usp=sharing&#41;\)
 [//]: # ([_av_train.json_]&#40;https://drive.google.com/file/d/1YwZjGfSnCyim95CdF3Q1HoyUqpSz-KPr/view?usp=sharing&#41;\)
 [//]: # ([_av_val.json_]&#40;https://drive.google.com/file/d/1xR9n36mqmXzw3GpMyQYjPibYp5-vQ_oX/view?usp=sharing&#41;)
@@ -18,7 +28,7 @@ You can download file in the below to be able to reproduce the results:
 Start from building the environment
 ```
 sudo apt-get install ffmpeg
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 ***
@@ -58,6 +68,8 @@ bash scripts/extract_frame.sh
 bash scripts/extract_wave.sh
 python scripts/preprocessing.py
 ```
+**Note**. Make sure to set the correct _output_address_ in the _'extract_frame.sh'_ and _'extract_wave.sh'_ scripts.
+Accordingly, you must add this address to the 'common/config.py' file.
 
 ### 2. Train
 
