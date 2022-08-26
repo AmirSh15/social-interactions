@@ -9,9 +9,9 @@ Switch to [*Looking-at-me*](https://github.com/EGO4D/social-interactions/tree/la
 This repository is a fork of the original repository and trying to fix the original bugs.
 You can download file in the below to be able to reproduce the results:
 
-[_manifest.csv_](https://drive.google.com/file/d/1skwx4fjwykfxmYhUHYk4-9BXWLNWiqSw/view?usp=sharing)\
-[_av_train.json_](https://drive.google.com/file/d/1YwZjGfSnCyim95CdF3Q1HoyUqpSz-KPr/view?usp=sharing)\
-[_av_val.json_](https://drive.google.com/file/d/1xR9n36mqmXzw3GpMyQYjPibYp5-vQ_oX/view?usp=sharing)
+[//]: # ([_manifest.csv_]&#40;https://drive.google.com/file/d/1skwx4fjwykfxmYhUHYk4-9BXWLNWiqSw/view?usp=sharing&#41;\)
+[//]: # ([_av_train.json_]&#40;https://drive.google.com/file/d/1YwZjGfSnCyim95CdF3Q1HoyUqpSz-KPr/view?usp=sharing&#41;\)
+[//]: # ([_av_val.json_]&#40;https://drive.google.com/file/d/1xR9n36mqmXzw3GpMyQYjPibYp5-vQ_oX/view?usp=sharing&#41;)
 
 ### Dependencies
 
