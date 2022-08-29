@@ -28,8 +28,12 @@ def train(train_loader, model, criterion, optimizer, epoch):
         audio = audio.cuda()
         target = target.cuda()
 
-        # compute output
-        output = model(video, audio)
+        try:
+            # compute output
+            output = model(video, audio)
+        except Exception as e:
+            print(e)
+            continue
 
         # from common.render import visualize_gaze
         # for i in range(32):

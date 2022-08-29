@@ -164,12 +164,12 @@ def run_evaluation(groundtruth, predictions, verbose=False, threshold=0.5):
     df_groundtruth = load_csv(
         groundtruth,
         column_names=[
-            "segment_id", "frame_id", "label"
+            "segment_id", "frame_id", "start", "end", "label"
         ])
     df_predictions = load_csv(
         predictions,
         column_names=[
-            "segment_id", "frame_id", "label", "score"
+            "segment_id", "frame_id", "start", "end", "label", "score"
         ])
         
     APs = []

@@ -69,7 +69,7 @@ bash scripts/extract_wave.sh
 python scripts/preprocessing.py
 ```
 **Note**. Make sure to set the correct _output_address_ in the _'extract_frame.sh'_ and _'extract_wave.sh'_ scripts.
-Accordingly, you must add this address to the 'common/config.py' file.
+Accordingly, you must add this address to the '_common/config.py_' file.
 
 ### 2. Train
 

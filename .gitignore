@@ -17,6 +17,7 @@ deprecated/
 data/csv/
 data/tmp
 data/videos
+data/ttm_test_data
 data/json_original/
 data/result_LAM/
 data/result_TTM/
