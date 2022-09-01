@@ -2,8 +2,9 @@ import argparse
 
 argparser = argparse.ArgumentParser(description="Evalai challenge: Talking to me")
 
-output_address = "/media/amir_shirian/Amir/Datasets/Ego4D"
-argparser.add_argument("--test_data_path", type=str, default="./final_test_data")
+# output_address = "/media/amir_shirian/Amir/Datasets/Ego4D"
+output_address = "/media/amir_shirian/abd1fa2e-8fdf-46e4-9dbf-dc0a070ba9b6/home/user/Desktop"
+argparser.add_argument("--test_data_path", type=str, default="./data/ttm_test_data")
 argparser.add_argument("--seg_info", type=str, default="./seg_info.json")
 # argparser.add_argument(
 #     "--img_path",
@@ -82,8 +83,8 @@ argparser.add_argument(
     "--test_stride", type=int, default=1, help="Test subsampling rate"
 )
 argparser.add_argument("--epochs", type=int, default=40, help="Maximum epoch")
-argparser.add_argument("--batch_size", type=int, default=100, help="Batch size")
-argparser.add_argument("--num_workers", type=int, default=0, help="Num workers")
+argparser.add_argument("--batch_size", type=int, default=200, help="Batch size")
+argparser.add_argument("--num_workers", type=int, default=8, help="Num workers")
 argparser.add_argument("--lr", type=float, default=5e-4, help="Learning rate")
 argparser.add_argument(
     "--weights", type=list, default=[0.266, 0.734], help="Class weight"
@@ -98,5 +99,6 @@ argparser.add_argument(
     "--exp_path", type=str, default="evalai_test/output", help="Path to results"
 )
 argparser.add_argument(
-    "--checkpoint", type=str, default="evalai_test/best.pth", help="Checkpoint to load"
+    "--checkpoint", type=str, default="evalai_test/output/checkpoint/best.pth", help="Checkpoint to load"
 )
+argparser.add_argument("--resume", default=True, help="Resume training")

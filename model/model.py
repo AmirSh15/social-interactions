@@ -54,7 +54,7 @@ class BaselineLSTM(nn.Module):
         return output
 
     def load_checkpoint(self):
-        if self.args.checkpoint is not None:
+        if self.args.checkpoint is not None and not self.args.resume:
             if os.path.exists(self.args.checkpoint):
                 logger.info(f'loading checkpoint {self.args.checkpoint}')
                 state = torch.load(self.args.checkpoint, map_location=f'cuda:{self.args.rank}')
